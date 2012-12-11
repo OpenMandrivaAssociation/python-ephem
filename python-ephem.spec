@@ -1,17 +1,14 @@
-%define name python-ephem
-%define version 3.7.3.4
 %define srcname pyephem
-%define release %mkrel 1
 
 Summary:	Scientific-grade astronomical computations for python
-Name:		%{name}
-Version:	%{version}
+Name:		python-ephem
+Version:	3.7.3.4
+Release:	2
 License:	LGPLv3
 Group:		Development/Python
-Release:	%{release}
 Source:		http://pypi.python.org/packages/source/p/%{srcname}/%{srcname}-%{version}.tar.gz
+Patch0:		pyephem-3.7.3.4-libm-fix.patch
 URL:		http://rhodesmill.org/pyephem/
-BuildRoot:	%_tmppath/%name-buildroot
 BuildRequires:	python-devel >= 2.5
 Provides:	%{srcname} = %{version}
 
@@ -39,19 +36,20 @@ PyEphem.
 %py_platsitedir/%{srcname}-*
 
 
-
 %prep
 %setup -q -n %{srcname}-%{version}
+%patch0 -p1
 
 
 %build
 
 
 %install
-
-%__rm -rf %{buildroot}
 %__python setup.py install --root=%{buildroot}
 
 
-%clean
-%__rm -rf %{buildroot}
+%changelog
+* Sun Nov 15 2009 John Balcaen <mikala@mandriva.org> 3.7.3.4-1mdv2010.1
++ Revision: 466170
+- import python-ephem
+

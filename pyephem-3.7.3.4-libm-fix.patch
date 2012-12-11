@@ -1,0 +1,10 @@
+diff -ur pyephem-3.7.3.4.orig/setup.py pyephem-3.7.3.4/setup.py
+--- pyephem-3.7.3.4.orig/setup.py	2012-07-04 19:16:16.946458503 +0400
++++ pyephem-3.7.3.4/setup.py	2012-07-04 19:24:52.425443495 +0400
+@@ -55,5 +55,6 @@
+     Extension('ephem._libastro',
+               ['extensions/_libastro.c'] + libastro_files + libastro_data,
+               include_dirs=['libastro-' + libastro_version],
++              libraries = ['m']
+               )],
+       )
