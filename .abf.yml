@@ -1,4 +1,5 @@
 removed_sources:
   pyephem-3.7.3.4.tar.gz: d1be94b2f0314a6ec572787c6d1b39ffbbb8ea5c
-sources:
   pyephem-3.7.5.1.tar.gz: 00a055af2422092401e50861a167c56232e1be91
+sources:
+  pyephem-3.7.5.2.tar.gz: e299a5ddf5a50f194d68fa25d83ecb947ebbf026

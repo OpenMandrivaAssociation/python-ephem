@@ -1,8 +1,9 @@
 %define srcname pyephem
 
 Summary:	Scientific-grade astronomical computations for python
+
 Name:		python-ephem
-Version:	3.7.5.1
+Version:	3.7.5.2
 Release:	1
 License:	LGPLv3
 Group:		Development/Python
@@ -45,3 +46,4 @@ find . -type f -exec chmod a+r {} \;
 
 %install
 %__python setup.py install --root=%{buildroot}
+
