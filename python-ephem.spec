@@ -31,7 +31,7 @@ PyEphem.
 
 
 %files
-%doc INSTALL COPYING LICENSE-GPL LICENSE-LGPL README 
+%doc INSTALL COPYING LICENSE-GPL LICENSE-LGPL  
 %{py_platsitedir}/ephem
 %{py_platsitedir}/%{srcname}-*
 
