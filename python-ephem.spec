@@ -4,7 +4,7 @@ Summary:	Scientific-grade astronomical computations for python
 
 Name:		python-ephem
 Version:	3.7.5.2
-Release:	1
+Release:	2
 License:	LGPLv3
 Group:		Development/Python
 Source:		http://pypi.python.org/packages/source/p/pyephem/pyephem-%{version}.tar.gz
