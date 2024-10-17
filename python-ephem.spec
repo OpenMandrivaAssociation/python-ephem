@@ -9,7 +9,7 @@ License:	LGPLv3
 Group:		Development/Python
 Source:		http://pypi.python.org/packages/source/p/pyephem/pyephem-%{version}.tar.gz
 Patch0:		pyephem-3.7.3.4-libm-fix.patch
-URL:		http://rhodesmill.org/pyephem/
+URL:		https://rhodesmill.org/pyephem/
 BuildRequires:	python-devel >= 2.5
 Provides:	%{srcname} = %{version}
 
